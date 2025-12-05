@@ -1,7 +1,7 @@
 services:
   topics-api:
     build:
-      context: ../topic_skill_service_example_fork
+      context: ../topic_skill_service_example
       dockerfile: Dockerfile
     image: "${IMAGE_PREFIX}/topics-api:${VERSION}"
     container_name: topics-api
@@ -12,7 +12,7 @@ services:
     
   resources-api:
     build:
-      context: ../resource_catalog_service_example_fork
+      context: ../resource_catalog_service_example
       dockerfile: Dockerfile
     image: "${IMAGE_PREFIX}/resources-api:${VERSION}"
     container_name: resources-api
